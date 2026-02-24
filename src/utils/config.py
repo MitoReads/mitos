@@ -6,8 +6,8 @@ def check_config():
     return True
 
 def create_config():
-    username = input("Enter your username (default: Guest): ") or "Guest"
-    hostname = input("Enter your hostname (default: MitOS): ") or "mitos"
+    username = input("Enter your username (default: Guest): ") or "guest"
+    hostname = input("Enter your hostname (default: mitos): ") or "mitos"
 
     os.makedirs(".config", exist_ok=True)
     with open(".config/config", "w") as f:
